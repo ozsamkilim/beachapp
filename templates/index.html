@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}Your Cart{% endblock %}
+{% block content %}
+<h1>Beach Fuel</h1>
+<div class="row pb-5">
+    <div class="col-4">
+      <div class="card mt-3">
+        <div style="overflow: hidden; height: 15rem;">
+          <img src="https://cdn-images-1.medium.com/max/829/1*BawgOrCOmnGTDPmx5hW4jg.jpeg" class="card-img-top">
+        </div>
+        <div class="card-body pet-card">
+          <h5 class="card-title pet-name">For the beach!</h5>
+          <a href="{{ url_for('show_pets') }}" class="btn btn-primary">View</a>
+        </div>
+      </div>
+    </div>    <div class="col-4">
+      <div class="card mt-3">
+        <div style="overflow: hidden; height: 15rem;">
+          <img src="https://robbreportedit.files.wordpress.com/2017/07/0_high-end-craft-beers-summer.jpg?w=1024" class="card-img-top">
+        </div>
+
+        <div class="card-body pet-card">
+          <h5 class="card-title pet-name">Your Cart</h5>
+          <a href="{{ url_for('show_cart') }}" class="btn btn-primary">View</a>
+        </div>
+      </div>
+    </div>
+</div>
+
+{% endblock %}
